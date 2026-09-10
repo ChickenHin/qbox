@@ -1,6 +1,6 @@
 name: Windows Builds
 
-on: [pull_request, push, workflow_dispatch, workflow_call]
+on: [workflow_dispatch, workflow_call]
 
 jobs:
   build:
