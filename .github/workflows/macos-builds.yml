@@ -1,14 +1,14 @@
 name: macOS Builds
 
-on: [ pull_request, push, workflow_dispatch, workflow_call ]
+on: [ workflow_dispatch ]
 
 jobs:
   build:
     strategy:
       fail-fast: false
       matrix:
-        os: [ macOS-15, macOS-26 ]
-        preset: [ mac, mac-debug ]
+        os: [ macOS-26 ]
+        preset: [ mac-debug ]
 
     runs-on: "${{ matrix.os }}"
 
